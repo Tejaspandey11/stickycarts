@@ -1,0 +1,112 @@
+stickycarts/
+├── backend/
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── .env
+│   ├── server.js
+│   ├── app.js
+│   │
+│   ├── config/
+│   │   ├── db.js
+│   │   └── cors.js
+│   │
+│   ├── models/
+│   │   ├── User.model.js
+│   │   ├── Cart.model.js
+│   │   ├── CartItem.model.js
+│   │   ├── CartMessage.model.js
+│   │   └── Payment.model.js
+│   │
+│   ├── controllers/
+│   │   ├── auth.controller.js
+│   │   ├── cart.controller.js
+│   │   ├── cartItem.controller.js
+│   │   ├── cartMessage.controller.js
+│   │   └── payment.controller.js
+│   │
+│   ├── routes/
+│   │   ├── auth.routes.js
+│   │   ├── cart.routes.js
+│   │   ├── cartItem.routes.js
+│   │   ├── cartMessage.routes.js
+│   │   └── payment.routes.js
+│   │
+│   ├── middlewares/
+│   │   ├── auth.middleware.js
+│   │   ├── role.middleware.js
+│   │   ├── error.middleware.js
+│   │   └── rateLimit.middleware.js
+│   │
+│   ├── services/
+│   │   ├── email.service.js
+│   │   ├── token.service.js
+│   │   └── costSplit.service.js
+│   │
+│   ├── utils/
+│   │   ├── validators.js
+│   │   ├── constants.js
+│   │   └── logger.js
+│   │
+│   └── tests/
+│       ├── auth.test.js
+│       ├── cart.test.js
+│       └── payment.test.js
+│
+├── frontend/
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   ├── index.html
+│   │
+│   ├── public/
+│   │   └── favicon.svg
+│   │
+│   └── src/
+│       ├── main.jsx
+│       ├── App.jsx
+│       │
+│       ├── api/
+│       │   ├── axios.js
+│       │   ├── auth.api.js
+│       │   ├── cart.api.js
+│       │   ├── cartItem.api.js
+│       │   ├── cartMessage.api.js
+│       │   └── payment.api.js
+│       │
+│       ├── pages/
+│       │   ├── Login.jsx
+│       │   ├── Register.jsx
+│       │   ├── Dashboard.jsx
+│       │   ├── CartList.jsx
+│       │   ├── CartDetails.jsx
+│       │   ├── Profile.jsx
+│       │   └── Payments.jsx
+│       │
+│       ├── components/
+│       │   ├── Navbar.jsx
+│       │   ├── ProtectedRoute.jsx
+│       │   ├── CartCard.jsx
+│       │   ├── CartItem.jsx
+│       │   └── MessageBox.jsx
+│       │
+│       ├── context/
+│       │   ├── AuthContext.jsx
+│       │   └── CartContext.jsx
+│       │
+│       ├── hooks/
+│       │   └── useAuth.js
+│       │
+│       ├── styles/
+│       │   └── main.css
+│       │
+│       └── utils/
+│           └── constants.js
+│
+├── shared/
+│   ├── api-contracts.md
+│   └── enums.js
+│
+├── docker-compose.yml
+├── package.json        # ROOT (for concurrently)
+├── README.md
+└── .gitignore

@@ -1,0 +1,30 @@
+{
+  "name": "stickycarts",
+  "version": "1.0.0",
+  "description": "Sticky Carts - Shared cart management application",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm install",
+    "build:frontend": "cd frontend && npm install && npm run build",
+    "test": "npm run test:backend",
+    "test:backend": "cd backend && npm test"
+  },
+  "keywords": [
+    "cart",
+    "shared",
+    "split",
+    "payment"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
